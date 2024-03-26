@@ -10,7 +10,7 @@ Projeto Backend para uma Farmácia com a capacidade de manipular os dados dos Pr
 
 
 ## Resumo do Projeto
-- Desenvolvimento de Aplicações Web com Spring Boot;
+- Desenvolvimento de Aplicação Web com Spring Boot;
 - Manipulação de Dados em Banco de Dados com MySQL;
 - Organização e Classificação de Dados;
 - Testes de API com Insomnia.
