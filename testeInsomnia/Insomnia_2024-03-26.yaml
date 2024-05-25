@@ -1,0 +1,569 @@
+_type: export
+__export_format: 4
+__export_date: 2024-03-26T18:14:15.827Z
+__export_source: insomnia.desktop.app:v8.6.1
+resources:
+  - _id: req_b4d5d0c30f75498cb73cf3a7c5cdbc3d
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711460369625
+    created: 1711460330128
+    url: http://localhost:8080/categorias/id/1
+    name: Deletar
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711460330128
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ee055e007635455cbe4be06859b86500
+    parentId: wrk_25d6731cd1d64f43b565747268e33579
+    modified: 1711459837000
+    created: 1711459837000
+    name: Categoria
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1711459837000
+    _type: request_group
+  - _id: wrk_25d6731cd1d64f43b565747268e33579
+    parentId: null
+    modified: 1711459825263
+    created: 1711459825263
+    name: Performance Goal - Farmácia
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_884085a5772f4026b8e863ae124f71f0
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711460319886
+    created: 1711460264721
+    url: http://localhost:8080/categorias
+    name: Atualizar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"id" : 1,
+        	"nome" : "Aquisição sem receita",
+        	"descricao" : "Remédios que podem ser adquiridos sem a necessidade de Prescrição Médica."
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459936843
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bcadfa6c98994fe09f67c495bafdb425
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711464142169
+    created: 1711460125400
+    url: http://localhost:8080/categorias
+    name: Cadastrar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"nome" : "Compra somente com receita",
+        	"descricao" : "Remédios que podem ser adquiridos APENAS com Prescrição Médica."
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459936743
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f10d1aa3cbe3494c85c13e006ae96dfe
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711460020688
+    created: 1711459936643
+    url: http://localhost:8080/categorias/nome/categoria
+    name: Consultar Categoria por Nome
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459936643
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_43700d41886848e69744c29e7f252959
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711467089752
+    created: 1711459896869
+    url: http://localhost:8080/categorias/id/1
+    name: Consultar Categoria por ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459843324
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f77e49f47cb946949dfb9b93ec0390f9
+    parentId: fld_ee055e007635455cbe4be06859b86500
+    modified: 1711459870051
+    created: 1711459843224
+    url: http://localhost:8080/categorias
+    name: Consultar todas as  Categorias
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459843224
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e1f6c31c34ef4638923b41a8e707b1fe
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711462212204
+    created: 1711461866725
+    url: http://localhost:8080/produtos/id/1
+    name: Deletar
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711460330128
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f9529a73b74e49b692da584147f0de6b
+    parentId: wrk_25d6731cd1d64f43b565747268e33579
+    modified: 1711461866721
+    created: 1711461866721
+    name: Produto
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1711459836950
+    _type: request_group
+  - _id: req_a3077054b32044e8933ffcc4e389d677
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711476288835
+    created: 1711461866725
+    url: http://localhost:8080/produtos
+    name: Atualizar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id" : 2,
+        	"nome" : "Rivotril",
+        	"preco" : "100",
+        	"qtde" : "10",
+        	"categoria" : {
+        	"id" : 1
+        	},
+        	"usuario" : {
+        	"id" : 2
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_fe05331b670f4294bb2082abf833a7d4
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        id: pair_c1df649561834b3fa443c11f9efe93b5
+    authentication: {}
+    metaSortKey: -1711459936843
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c84abe06cf594f8bb0a8d56f4b48c2d3
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711476484279
+    created: 1711461866724
+    url: http://localhost:8080/produtos
+    name: Cadastrar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome" : "Rivotril",
+        	"preco" : "100",
+        	"qtde" : "10",
+        	"categoria" : {
+        	"id" : 1
+        	},
+        	"usuario" : {
+        	"id" : 2
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3029d5fb6a284063ba408bd742b67072
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        id: pair_d3b92975b7094571be4f54dc545fdc89
+    authentication: {}
+    metaSortKey: -1711459936743
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_003cb229b2b1427d80b4aa5af486bfb4
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711470800661
+    created: 1711461866723
+    url: http://localhost:8080/produtos/nome/produto
+    name: Consultar Produto por Nome
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459936643
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_611f959a8d00470a94cb0d2ff82a35a9
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711466960374
+    created: 1711461866723
+    url: http://localhost:8080/produtos/id/2
+    name: Consultar Produto por ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1711459843324
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_666b5d036eb04419b797eff89a271ce2
+    parentId: fld_f9529a73b74e49b692da584147f0de6b
+    modified: 1711476312569
+    created: 1711461866722
+    url: http://localhost:8080/produtos
+    name: Consultar todos os Produtos
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+        id: pair_8f63cf28a7c847bdaa2c4a47bfb4e7bf
+      - id: pair_20e155111f43475086880572f75e9ab6
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        description: ""
+    authentication: {}
+    metaSortKey: -1711459843224
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a1064c06249c4c8a81f704b81c8c6f81
+    parentId: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    modified: 1711476088072
+    created: 1711475576832
+    url: http://localhost:8080/usuarios/atualizar
+    name: Atualizar Usuário
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "id" : 2,
+        "nome" : "Zoe Duda",
+        "usuario": "zoe@farmacia.com",
+        "senha" : "petiscoss",
+        "foto": "https://i.imgur.com/Tk9f10K-png"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3cbf044c44de46d0b96940c7fdab667c
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        id: pair_a772c6a6818646dfac6b58f9ec71e1a8
+    authentication: {}
+    metaSortKey: -1710815115570
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    parentId: wrk_25d6731cd1d64f43b565747268e33579
+    modified: 1711475576829
+    created: 1711475576829
+    name: Usuário
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1000000000
+    _type: request_group
+  - _id: req_a5ef48c12bf747fbb7c3e9548fb067e7
+    parentId: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    modified: 1711476059293
+    created: 1711475576830
+    url: http://localhost:8080/usuarios/logar
+    name: Autenticar Usuário
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"usuario" : "Zoe@farmacia.com",
+        	"senha" : "petiscoss"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710815115470
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4b41e54f295143b5978321242e09ce89
+    parentId: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    modified: 1711476039304
+    created: 1711475576830
+    url: http://localhost:8080/usuarios/cadastrar
+    name: Cadastrar Usuário
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome" : "Zoe",
+        	"usuario" : "Zoe@farmacia.com",
+        	"senha" : "petiscoss",
+        	"foto": " "
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710815115370
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8f77d0bda89d4cb6ade7816764a9de42
+    parentId: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    modified: 1711475757416
+    created: 1711475576831
+    url: http://localhost:8080/usuarios/1
+    name: Consultar Usuário por ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        id: pair_c2e876c1d04849c2aa70c9013639cf31
+    authentication: {}
+    metaSortKey: -1710815115320
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f4d11a6c5a8342a49481bf8b2cdcb662
+    parentId: fld_cc257dc3c8f14a54b2d7e517343a3bad
+    modified: 1711475743024
+    created: 1711475576831
+    url: http://localhost:8080/usuarios/all
+    name: " Consultar todos os Usuários"
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+        id: pair_24c1aa462e0e4abe99e75c3eee1036f2
+      - id: pair_09b27412372643e1bad86a5f78ea2801
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWZuZUBmYXJtYWNpYS5jb20iLCJpYXQiOjE3MTE0NzU3MjEsImV4cCI6MTcxMTQ3OTMyMX0.NaVmLC_JymjokG9pUiy32jAlRFQA3aB21nhCuw3Xo6c
+        description: ""
+    authentication: {}
+    metaSortKey: -1710815115270
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_1f9bdfd3552b2fa88f4fe4cacb76927e873d7d09
+    parentId: wrk_25d6731cd1d64f43b565747268e33579
+    modified: 1711459825265
+    created: 1711459825265
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1711459825265
+    _type: environment
+  - _id: jar_1f9bdfd3552b2fa88f4fe4cacb76927e873d7d09
+    parentId: wrk_25d6731cd1d64f43b565747268e33579
+    modified: 1711459825266
+    created: 1711459825266
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
